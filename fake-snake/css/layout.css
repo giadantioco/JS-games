@@ -33,11 +33,6 @@ body {
 }
 
 /* bg colors */
-body,
-.snake {
-  background-color: var(--bg-color);
-}
-
 .game-border-3,
 #logo {
   background-color: var(--bg-game-board);

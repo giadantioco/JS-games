@@ -1,3 +1,8 @@
+body,
+.snake {
+  background-color: var(--bg-color);
+}
+
 /* snake */
 .snake {
   border: var(--snake-color) 1px dotted;

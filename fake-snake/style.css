@@ -54,7 +54,7 @@ body,
 /* instruction text */
 #instruction-text {
   position: absolute;
-  top: 60%;
+  top: 61%;
   color: #333;
   width: 300px;
   text-align: center;
@@ -93,6 +93,7 @@ body,
 /* snake's food */
 .food {
   background-color: #dedede;
+  border: #999 5px solid;
 }
 
 /* logo layout */

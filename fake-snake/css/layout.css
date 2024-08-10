@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=VT323&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* layout */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "VT323", monospace;
+}
+
+/* instruction text */
+#instruction-text {
+  position: absolute;
+  top: 61%;
+  color: var(--instruction-text);
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+  margin: 0;
+}
+
+/* logo layout */
+#logo {
+  position: absolute;
+}
+
+/* bg colors */
+body,
+.snake {
+  background-color: var(--bg-color);
+}
+
+.game-border-3,
+#logo {
+  background-color: var(--bg-game-board);
+}

@@ -1,0 +1,21 @@
+/* scores */
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+#score {
+  color: var(--score-color);
+}
+
+#score,
+#highScore {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+#highScore {
+  color: var(--high-score-color);
+  display: none;
+}

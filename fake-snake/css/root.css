@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #414141;
+  --bg-game-board: #c4cfa3;
+  --food-color: #999;
+  --game-border-1: #595f43;
+  --game-border-2: #abb78a;
+  --game-border-3: #8b966c;
+  --high-score-color: #d8ddca;
+  --instruction-text: #333;
+  --score-color: #abb78a;
+  --snake-color: #5a5a5a;
+}

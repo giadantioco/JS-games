@@ -1,0 +1,10 @@
+/* snake */
+.snake {
+  border: var(--snake-color) 1px dotted;
+}
+
+/* snake's food */
+.food {
+  background-color: #dedede;
+  border: var(--food-color) 5px solid;
+}

@@ -77,7 +77,7 @@ You will need a web browser that supports HTML5, CSS3, and JavaScript.
 
 ### Change Grid Size
 
-To change the size of the game grid, modify the `gridSize` variable in the `main.js` file. Note that the size of each grid cell is controlled via CSS in the `gamBoard.css` file.
+To change the size of the game grid, modify the `gridSize` variable in the `main.js` file. Note that the size of each grid cell is controlled via CSS in the `gameBoard.css` file.
 
 ### Adjust Game Speed
 

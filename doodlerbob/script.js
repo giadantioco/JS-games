@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".grid");
   const doodler = document.createElement("div");
+  const startBtn = document.querySelector("#startButton");
   let doodlerLeftSpace = 50;
   let startPoint = 150;
   let doodlerBottomSpace = startPoint;
@@ -15,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let leftTimerId;
   let rightTimerId;
   let score = 0;
+
+  const gridHeight = 600;
+  const doodlerHeight = 85;
 
   function createDoodler() {
     grid.appendChild(doodler);
@@ -75,7 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
     upTimerId = setInterval(function () {
       doodlerBottomSpace += 20;
       doodler.style.bottom = doodlerBottomSpace + "px";
-      if (doodlerBottomSpace > startPoint + 200) {
+
+      if (doodlerBottomSpace + doodlerHeight >= gridHeight) {
+        doodlerBottomSpace = gridHeight - doodlerHeight;
+        doodler.style.bottom = doodlerBottomSpace + "px";
         fall();
         isJumping = false;
       }
@@ -141,8 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     isGoingRight = true;
     rightTimerId = setInterval(function () {
-      if (doodlerLeftSpace <= 340) {
-        doodlerLeftSpace += 50;
+      if (doodlerLeftSpace <= 315) {
+        doodlerLeftSpace += 5;
         doodler.style.left = doodlerLeftSpace + "px";
       } else moveLeft();
     }, 20);
@@ -175,6 +182,5 @@ document.addEventListener("DOMContentLoaded", () => {
       document.addEventListener("keyup", control);
     }
   }
-  // attach to button
-  start();
+  startBtn.addEventListener("click", start);
 });

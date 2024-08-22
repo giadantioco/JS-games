@@ -1,3 +1,7 @@
+.body {
+  height: 90vh;
+}
+
 .grid {
   width: 400px;
   height: 600px;
@@ -5,6 +9,7 @@
   position: relative;
   font-size: 200px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .doodler {

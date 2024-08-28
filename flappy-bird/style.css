@@ -21,7 +21,14 @@
 
 .bird {
   background-color: yellow;
-  position: absolute;
-  height: 45px;
   width: 60px;
+  height: 45px;
+  position: absolute;
+}
+
+.obstacle {
+  background-color: green;
+  width: 60px;
+  height: 300px;
+  position: absolute;
 }
